@@ -1,0 +1,260 @@
+/* Background */
+
+body {
+  background-color: #fff;
+}
+
+/* Profile Setup */
+
+.profile-size {
+  height: 120px;
+  width: 120px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-rounded {
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.profile-desc {
+  max-width: 60%;
+  margin: 0 auto;
+  font-weight: 300;
+  padding: 3px 0px 8px 8px;
+}
+
+/* Content */
+
+h1, p, span {
+  font-family: 'Avenir' ,sans-serif;
+}
+
+h1{
+  text-align: center;
+  line-height: 2px;
+  font-weight: 500;
+  margin-top: 30px;
+  padding-top: 5px;
+  letter-spacing: -1.3px;
+  color: rgba(238, 44, 62, 0.9);
+}
+
+.sub-header {
+  text-align: center;
+  line-height: 15px;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 13px;
+  letter-spacing: -0.3px;
+  font-weight: 500;
+  font-size: 1.2em;
+  padding-bottom: 0px;
+}
+
+.sub-title {
+  text-align: center;
+  line-height: 15px;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 13px;
+  letter-spacing: -0.3px;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 13px;
+  letter-spacing: .3px;
+}
+
+.container {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* Cards */
+
+.card {
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 1px 1px 0 rgba(0,0,0,0.12), 0 2px 2px -3px rgba(0,0,0,0.2);
+  max-width: 20%;
+  margin: 0 auto;
+  /*padding: 10px 0px 10px 8px;*/
+  display: inline-block;
+  border-radius: 0 0 2px 2px;
+  padding-bottom: 25px;
+  margin-top: 20px;
+}
+
+.card-image {
+  margin: 0 auto;
+  max-width: 100%;
+  padding-bottom: 10px;
+}
+
+#card-image {
+  max-width: 100%;
+  min-height: 158px;
+  border-radius: 2px 2px 0 0;
+}
+
+.card-content {
+  padding: 24px 24px 10px 24px;
+  border-radius: 0 0 2px 2px;
+}
+
+/* Socials */
+
+.fa {
+  color: #2d2d2d;
+  padding: 15px 21px 0px 12px;
+  transition-duration: 0.3s;
+}
+
+.fa:hover {
+  color: rgba(238, 44, 62, 0.9);
+}
+
+.row {
+  font-size: 2em;
+  text-align: center;
+}
+
+/* Selection */
+
+::selection {
+    background: #e6ae48;
+    color: #fff;
+}
+/* Animations */
+
+/*#zombie{
+    bottom:55.5%;
+    position:absolute;
+    -webkit-animation:linear infinite alternate;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 18s;
+    height: 80px;
+    z-index: 1;
+}
+
+@-webkit-keyframes run {
+    18% { left: 18%;}
+    50%{ left : 76%;}
+    82%{ left: 18%;}
+}*/
+
+.sliding-middle-out {
+  display: inline-block;
+  position: relative;
+
+}
+.sliding-middle-out:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1.5px;
+  width: 0px;
+  margin-top: 5px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+  width: 100%;
+  background:  rgb(238, 44, 62);
+}
+
+/* Button */
+.btn {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-family: 'Avenir' ,sans-serif;
+  color: #575757;
+  font-size: 13px;
+  background: #e8e8e8;
+  padding: 5px 11px 5px 11px;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+.btn:hover {
+  background: #ee2c3f;
+  text-decoration: none;
+  color: white;
+}
+
+.btn:focus {
+  background: #941F2B;
+  outline: none;
+  -webkit-box-shadow: inset 0px 0px 4px #ccc;
+     -moz-box-shadow: inset 0px 0px 4px #ccc;
+          box-shadow: inset 0px 0px 4px #ccc;
+}
+
+@media all and (max-width: 1024px) {
+  .card {
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 1px 1px 0 rgba(0,0,0,0.12), 0 2px 2px -3px rgba(0,0,0,0.2);
+    max-width: 90%;
+    margin: 0 auto;
+    display: block !important;
+    /*padding: 10px 0px 10px 8px;*/
+    border-radius: 0 0 2px 2px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .card-image {
+    margin: 0 auto;
+    max-width: 100%;
+    padding-bottom: 10px;
+  }
+
+  #card-image {
+    max-width: inherit;
+    min-height: 158px;
+    border-radius: 2px 2px 0 0;
+  }
+
+  .card-content {
+    padding: 24px 24px 10px 24px;
+    border-radius: 0 0 2px 2px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  h1{
+  text-align: center;
+  line-height: 2px;
+  font-weight: 500;
+  /*margin-top: 30px;*/
+  padding-top: 50px;
+  letter-spacing: -1.3px;
+  color: rgba(238, 44, 62, 0.9);
+}
+
+.profile-desc {
+  max-width: 90%;
+  margin: 0 auto;
+  font-weight: 300;
+  padding: 3px 0px 8px 8px;
+}
+
+
+.sub-header {
+  text-align: center;
+  line-height: 1em;
+  display: block;
+  padding-bottom: 13px;
+  letter-spacing: -0.3px;
+  font-weight: 500;
+}
+
+
+}
+
